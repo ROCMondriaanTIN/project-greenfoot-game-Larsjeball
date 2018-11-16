@@ -1,14 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class V here.
+ * Write a description of class copyE here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class V extends Actor
+public class copyE extends Actor
 {
- public V()
+    public copyE()
    {
     GreenfootImage myImage = getImage();
     int myNewHeight = (int)myImage.getHeight()/4;

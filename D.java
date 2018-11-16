@@ -1,18 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class V here.
+ * Write a description of class D here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class V extends Actor
+public class D extends Actor
 {
- public V()
+      public D()
    {
     GreenfootImage myImage = getImage();
-    int myNewHeight = (int)myImage.getHeight()/4;
-    int myNewWidth = (int)myImage.getWidth()/4;
+    int myNewHeight = (int)myImage.getHeight()/3;
+    int myNewWidth = (int)myImage.getWidth()/3;
     myImage.scale(myNewWidth, myNewHeight);
    }
     public void act() 

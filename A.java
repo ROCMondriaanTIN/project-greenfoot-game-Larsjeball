@@ -11,8 +11,8 @@ public class A extends Actor
   public A()
    {
     GreenfootImage myImage = getImage();
-    int myNewHeight = (int)myImage.getHeight()/6;
-    int myNewWidth = (int)myImage.getWidth()/6;
+    int myNewHeight = (int)myImage.getHeight()/8;
+    int myNewWidth = (int)myImage.getWidth()/8;
     myImage.scale(myNewWidth, myNewHeight);
    }
     public void act() 
