@@ -35,6 +35,7 @@ public class Hero extends Mover {
     private GreenfootImage p1jump = new GreenfootImage("p1_jump.png");
     private GreenfootImage p1duck = new GreenfootImage("p1_duck.png");
     public int frame = 1;
+    private int animationCounter = 0;
 
 
     public Hero() {
@@ -48,7 +49,7 @@ public class Hero extends Mover {
     @Override
     public void act() {
         handleInput();
-       
+       animationCounter ++;
         velocityX *= drag;
         velocityY += acc;
         if (velocityY > gravity) {
@@ -88,15 +89,15 @@ public class Hero extends Mover {
 
         if (Greenfoot.isKeyDown("Left"))
         {
-            velocityX = -4;
-            
+            velocityX = -6;
+            if(animationCounter % 4 == 0)
             animateLeft();
         }
         
         else if (Greenfoot.isKeyDown("Right"))
         {
-            velocityX = 4;
-            
+            velocityX = 6;
+            if(animationCounter % 4 == 0)
             animateRight();
         }
         

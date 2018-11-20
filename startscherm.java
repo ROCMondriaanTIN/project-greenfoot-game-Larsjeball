@@ -74,67 +74,17 @@ public class startscherm extends World
         n.setLocation(250,149);
         i.setLocation(140,189);
         i.setLocation(135,161);
-        A a = new A();
+       ;
         addObject(a,557,189);
         a.setLocation(459,151);
         v.setLocation(372,184);
-        n.setLocation(270,177);
-        a.setLocation(473,190);
-        i.setLocation(68,64);
-        n.setLocation(172,128);
-        v.setLocation(308,131);
-        n.setLocation(193,117);
-        v.setLocation(301,124);
-        a.setLocation(392,105);
-        i.setLocation(95,127);
-        i.setLocation(125,165);
-        a.setLocation(436,144);
-        i.setLocation(78,102);
-        n.setLocation(191,142);
-        v.setLocation(255,138);
-        a.setLocation(369,113);
-        v.setLocation(284,163);
-        a.setLocation(393,154);
-        v.setLocation(335,150);
-        n.setLocation(202,129);
-        v.setLocation(286,127);
-        a.setLocation(385,128);
-        n.setLocation(211,155);
-        v.setLocation(293,146);
-        a.setLocation(385,139);
+      
         a.setLocation(417,143);
         v.setLocation(290,161);
         n.setLocation(209,159);
         n.setLocation(186,148);
-        v.setLocation(313,168);
-        v.setLocation(301,125);
-        v.setLocation(299,165);
-        v.setLocation(301,176);
-        n.setLocation(166,117);
-        v.setLocation(279,112);
-        a.setLocation(404,133);
-        a.setLocation(364,135);
-        v.setLocation(267,136);
-        a.setLocation(349,134);
-
-        v.setLocation(283,112);
-        a.setLocation(341,113);
-
-        v.setLocation(246,125);
-        a.setLocation(319,158);
-        a.setLocation(342,161);
-        a.setLocation(323,109);
-
-        a.setLocation(329,140);
-        a.setLocation(319,134);
-        a.setLocation(331,142);
-        a.setLocation(339,146);
-        a.setLocation(313,123);
-        a.setLocation(329,153);
-        a.setLocation(317,141);
-        a.setLocation(335,141);
-        a.setLocation(323,96);
-        a.setLocation(326,135);
+        v.
+       
         E e = new E();
         addObject(e,532,132);
         e.setLocation(472,103);
@@ -276,6 +226,9 @@ public class startscherm extends World
         copyE2.setLocation(1095,116);
         copyE2.setLocation(1079,143);
         copyE2.setLocation(1092,139);
+        copyE2.setLocation(1070,147);
+        copyE2.setLocation(1095,142);
+        copyE2.setLocation(1075,133);
     }
 }
    
