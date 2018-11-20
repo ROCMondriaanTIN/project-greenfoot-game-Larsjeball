@@ -55,6 +55,7 @@ private CollisionEngine ce;
         // Alle objecten toevoegen aan de wereld: camera, main karakter en mogelijke enemies
         addObject(camera, 0, 0);
         addObject(hero, 300, 200);
+        addObject(new Diamant(), 1290, 120);
         this.setBackground("bg.png");
 
        ce = new CollisionEngine(te, camera);

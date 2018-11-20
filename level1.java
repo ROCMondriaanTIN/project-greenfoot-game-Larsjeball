@@ -60,6 +60,7 @@ private CollisionEngine ce;
         addObject(new Deurmidden(), 3000, 750);
         addObject(new Deurtop(), 3000, 700);
         addObject(new Enemy2(), 2340, 360);
+        
        // addObject(new Enemy(), 1170, 410);
 
         // Initialiseren van de CollisionEngine zodat de speler niet door de tile heen kan lopen.
