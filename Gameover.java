@@ -32,8 +32,6 @@ public class Gameover extends World
      */
     private void prepare()
     {
-        Enter enter = new Enter();
-        addObject(enter,617,102);
-        enter.setLocation(601,95);
+        
     }
 }

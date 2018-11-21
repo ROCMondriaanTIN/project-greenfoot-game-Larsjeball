@@ -63,6 +63,16 @@ public class Hero extends Mover {
                 break;
             }
         }
+        for(Actor liquidLava : getIntersectingObjects(TileExtended.class)) {
+           TileExtended tile = (TileExtended) liquidLava;
+           if (tile != null && tile.type == "vuur") {
+            Greenfoot.setWorld(new Gameover());
+            break;
+             }
+            }
+            
+    
+
         
         if(oldY < getY() || oldY > getY()) {
             canJump = false;

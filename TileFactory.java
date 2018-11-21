@@ -204,12 +204,12 @@ public class TileFactory
                 break;
             }
             case 79 : {
-                tile =  new Tile("liquidLava.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+                tile =  new TileExtended("liquidLava.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT, "vuur");
                 tile.isSolid = false;
                 break;
             }
             case 81 : {
-                tile =  new Tile("liquidLavaTop_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+                tile =  new TileExtended("liquidLavaTop_mid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT, "vuur" );
                 tile.isSolid = false;
                 break; 
             }
@@ -242,6 +242,30 @@ public class TileFactory
                 tile =  new Tile("metalRight.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
                 tile.isSolid = true;
                 break; 
+            }
+              case 96 : {
+                tile =  new Tile("cloud1.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+                tile.isSolid = false;
+                break; 
+                
+            }
+             case 97 : {
+                tile =  new Tile("cloud2.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+                tile.isSolid = false;
+                break; 
+                
+            }
+                case 98 : {
+                tile =  new Tile("cloud3.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+                tile.isSolid = false;
+                break; 
+                
+            }
+             case 99 : {
+                tile =  new Tile("bush.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+                tile.isSolid = false;
+                break; 
+                
             }
             default : {
                 tile =  new Tile("grassMid.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);

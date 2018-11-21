@@ -36,6 +36,9 @@ public class LevelSelector extends World
         addObject(nummer1,339,433);
         Nummer2 nummer2 = new Nummer2();
         addObject(nummer2,667,437);
+
+        Afblv1 afblv1 = new Afblv1();
+        addObject(afblv1,356,584);
     }
 }
 

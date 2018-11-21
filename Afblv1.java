@@ -1,20 +1,20 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Nummer1 here.
+ * Write a description of class Afblv1 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Nummer1 extends Mover
+public class Afblv1 extends Actor
 {
     /**
-     * Act - do whatever the Nummer1 wants to do. This method is called whenever
+     * Act - do whatever the Afblv1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 
     {
-         if(Greenfoot.mouseClicked(this))
+        if(Greenfoot.mouseClicked(this))
             Greenfoot.setWorld(new level1());
     }    
 }
