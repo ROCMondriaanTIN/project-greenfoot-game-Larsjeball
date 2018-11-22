@@ -17,7 +17,7 @@ public class Deurmidden extends Mover
           
         if(getOneIntersectingObject(Hero.class)!= null && getWorld().getObjects(Sleutel.class).isEmpty())
         {
-        Greenfoot.setWorld(new LevelSelector());
+        Greenfoot.setWorld(new Backround());
     }
         applyVelocity();
     }    

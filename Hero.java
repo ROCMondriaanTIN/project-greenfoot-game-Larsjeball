@@ -82,7 +82,13 @@ public class Hero extends Mover {
             canJump = true;
           }
     if(Greenfoot.isKeyDown("space") == false) oldY = getY();
-  }
+    }
+    public void changePlayer()
+    {
+       
+       
+    
+    }
     public void handleInput() 
     {
         

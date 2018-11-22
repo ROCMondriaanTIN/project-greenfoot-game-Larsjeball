@@ -59,8 +59,8 @@ private CollisionEngine ce;
         addObject(new Sleutel(), 4680, 300);
         addObject(new Deurmidden(), 5820, 690);
         addObject(new Deurtop(), 5820, 630);
-        addObject(new Charactermunt1(), 3780, 600);
-        addObject(new Charactermunt2(), 3940, 600);
+        addObject(new CharacterCoin1(), 3810, 600);
+        addObject(new CharacterCoin2(), 3990, 600);
         this.setBackground("bg.png");
 
        ce = new CollisionEngine(te, camera);
