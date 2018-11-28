@@ -161,6 +161,8 @@ public class LevelSelector extends World
         afbLv2.setLocation(480,556);
         afbLv2.setLocation(501,601);
         afbLv2.setLocation(459,555);
+        Nummer3 nummer3 = new Nummer3();
+        addObject(nummer3,767,427);
     }
 }
 
