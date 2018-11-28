@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class level2 extends World
 {
 private CollisionEngine ce;
+Counter counter = new Counter();
     /**
      * Constructor for objects of class level2.
      * 
@@ -55,12 +56,12 @@ private CollisionEngine ce;
         // Alle objecten toevoegen aan de wereld: camera, main karakter en mogelijke enemies
         addObject(camera, 0, 0);
         addObject(hero, 300, 200);
+        addObject(counter, 100,40);
         addObject(new Diamant(), 1290, 120);
         addObject(new Sleutel(), 4680, 300);
-        addObject(new Deurmidden(), 5820, 690);
-        addObject(new Deurtop(), 5820, 630);
-        addObject(new CharacterCoin1(), 3810, 600);
-        addObject(new CharacterCoin2(), 3990, 600);
+        addObject(new Deurmidden2(), 5820, 690);
+        addObject(new Deurtop2(), 5820, 630);
+       
         this.setBackground("bg.png");
 
        ce = new CollisionEngine(te, camera);
@@ -72,6 +73,14 @@ private CollisionEngine ce;
     @Override
     public void act() {
         ce.update();
+    }
+     private void prepare()
+    {
+        addObject(counter, 100, 40);
+    }
+    public Counter getCounter()
+    {
+        return counter;
     }
     
   

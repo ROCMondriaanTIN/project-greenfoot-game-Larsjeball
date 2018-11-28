@@ -14,7 +14,7 @@ public class Nummer1 extends Mover
      */
     public void act() 
     {
-         if(Greenfoot.mouseClicked(this))
+         if(Greenfoot.isKeyDown("1"))
             Greenfoot.setWorld(new level1());
     }    
 }

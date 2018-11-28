@@ -24,7 +24,7 @@ public class startscherm extends World
     public void act()
     {
         if(Greenfoot.isKeyDown("enter"))
-            Greenfoot.setWorld(new level1());
+            Greenfoot.setWorld(new PlaySelect());
     }
 
     /**
@@ -38,10 +38,12 @@ public class startscherm extends World
      */
     private void prepare()
     {
-      
-        Karakter2 karakter2 = new Karakter2();
-        addObject(karakter2,636,645);
+
         Karakter3 karakter3 = new Karakter3();
         addObject(karakter3,991,371);
+        Hero hero = new Hero();
+        addObject(hero,234,397);
+        Karakter2 karakter2 = new Karakter2();
+        addObject(karakter2,642,642);
     }
 }

@@ -66,11 +66,29 @@ public class Hero extends Mover {
         for(Actor liquidLava : getIntersectingObjects(TileExtended.class)) {
            TileExtended tile = (TileExtended) liquidLava;
            if (tile != null && tile.type == "vuur") {
+            Greenfoot.setWorld(new Gameover2());
+            break;
+             }
+            }
+        for(Actor liquidWaterTop_mid : getIntersectingObjects(TileExtended.class)) {
+           TileExtended tile = (TileExtended) liquidWaterTop_mid;
+           if (tile != null && tile.type == "water") {
             Greenfoot.setWorld(new Gameover());
             break;
              }
             }
+            Actor Diamant = getOneIntersectingObject(Diamant.class);
+            if (Diamant != null) {
+                World myWorld = getWorld();
+                myWorld.removeObject(Diamant);
+                
+                level2 level2 = (level2)myWorld;
+                Counter counter = level2.getCounter();
+                counter.addScore();
+               
             
+                
+            }
     
 
         
@@ -83,12 +101,10 @@ public class Hero extends Mover {
           }
     if(Greenfoot.isKeyDown("space") == false) oldY = getY();
     }
-    public void changePlayer()
-    {
-       
-       
+   
     
-    }
+    
+    
     public void handleInput() 
     {
         

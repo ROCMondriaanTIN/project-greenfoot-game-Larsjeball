@@ -1,19 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Gameover here.
+ * Write a description of class Gameover2 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Gameover extends World
+public class Gameover2 extends World
 {
 
     /**
-     * Constructor for objects of class Gameover.
+     * Constructor for objects of class Gameover2.
      * 
      */
-    public Gameover()
+    public Gameover2()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(700, 500, 1); 
@@ -40,10 +40,7 @@ public class Gameover extends World
         Karakterhurt2 karakterhurt2 = new Karakterhurt2();
         addObject(karakterhurt2,530,80);
 
-        Restart restart = new Restart();
-        addObject(restart,483,375);
-        removeObject(restart);
-        Restart restart2 = new Restart();
-        addObject(restart2,490,360);
+        Restart2 restart2 = new Restart2();
+        addObject(restart2,489,346);
     }
 }

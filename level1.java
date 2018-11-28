@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class level1 extends World
 {
 private CollisionEngine ce;
+Counter counter = new Counter();
     /**
      * Constructor for objects of class level2.
      * 
@@ -18,6 +19,7 @@ private CollisionEngine ce;
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1, false);
         this.setBackground("bg.png");
+        prepare();
 
         int[][] map = {
 {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,97,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,97,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1},
@@ -49,13 +51,17 @@ private CollisionEngine ce;
         // Declareren en initialiseren van een main karakter van het spel mijne heet Hero. Deze klasse 
         // moet de klasse Mover extenden voor de camera om te werken
         Hero hero = new Hero();
+        
 
         // Laat de camera een object volgen. Die moet een Mover instatie zijn of een extentie hiervan.
         camera.follow(hero);
+        
 
         // Alle objecten toevoegen aan de wereld: camera, main karakter en mogelijke enemies
         addObject(camera, 0, 0);
         addObject(hero, 300, 200);
+        addObject(counter, 100,40);
+        
         addObject(new Sleutel(), 2300, 150);
         addObject(new Deurmidden(), 4109, 508);
         addObject(new Deurtop(), 4109, 448);
@@ -69,15 +75,25 @@ private CollisionEngine ce;
         // Toevoegen van de mover instantie of een extentie hiervan
         ce.addCollidingMover(hero);
         
+        
     }
         
     @Override
     public void act() {
         ce.update();
     }
+    private void prepare()
+    {
+        addObject(counter, 100, 40);
+    }
+    public Counter getCounter()
+    {
+        return counter;
+    }
     
   
 }
+
 
 
     

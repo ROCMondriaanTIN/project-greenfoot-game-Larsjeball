@@ -77,7 +77,7 @@ public class TileFactory
                 break;
             }
             case 17 : {
-                tile =  new Tile("liquidWater.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT);
+                tile =  new TileExtended("liquidWater.png", TileEngine.TILE_WIDTH, TileEngine.TILE_HEIGHT, "water");
                 break;
             }
             case 18 : {

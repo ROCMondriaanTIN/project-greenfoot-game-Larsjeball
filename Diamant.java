@@ -16,7 +16,8 @@ public class Diamant extends Mover
     {
          for (Actor enemy : getIntersectingObjects(Hero.class)) {
             if (enemy != null) {
-                getWorld().removeObject(this);
+                
+                
                 break;
             }
         }
