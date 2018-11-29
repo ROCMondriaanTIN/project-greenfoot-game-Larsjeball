@@ -14,6 +14,13 @@ public class Charactercoin2 extends Mover
      */
     public void act() 
     {
-        // Add your action code here.
+        for (Actor Charactercoin2 : getIntersectingObjects(Hero.class)){
+            if(Charactercoin2 != null) {
+            getWorld().removeObject(this);
+            break;
+    }    
+    
+}
+applyVelocity();
     }    
 }

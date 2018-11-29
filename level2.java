@@ -61,6 +61,7 @@ Counter counter = new Counter();
         addObject(new Sleutel(), 4680, 300);
         addObject(new Deurmidden2(), 5820, 690);
         addObject(new Deurtop2(), 5820, 630);
+        addObject(new Charactercoin1(), 4100, 360);
        
         this.setBackground("bg.png");
 

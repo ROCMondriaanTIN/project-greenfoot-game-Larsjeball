@@ -89,9 +89,12 @@ Counter counter = new Counter();
         addObject(counter, 100,40);
         addObject(new Deurmidden3(), 2400, 750);
         addObject(new Deurtop3(), 2400, 690);
+        addObject(new Deurmidden4(), 1380, 750);
+        addObject(new Deurtop4(), 1380, 690);
         addObject(new Sleutel(), 2680, 2220);
-        addObject(new Charactercoin1(), 2080, 1060);
-        
+        addObject(new Charactercoin1(), 2080, 1090);
+        addObject(new Charactercoin2(), 1680, 1090);
+        addObject(new Slime(), 540, 1550);
         
       
         

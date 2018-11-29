@@ -16,7 +16,7 @@ public class Deurmidden2 extends Mover
     {
           if(getOneIntersectingObject(Hero.class)!= null && getWorld().getObjects(Sleutel.class).isEmpty())
         {
-        Greenfoot.setWorld(new level3());
+        Greenfoot.setWorld(new Backround2());
     }
         applyVelocity();
     }    

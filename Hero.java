@@ -36,6 +36,7 @@ public class Hero extends Mover {
     private int animationCounter = 0;
      int waardeCoin = 1;
      int Charactercoin1 = 0;
+     int Charactercoin2 = 0;
     
   
 
@@ -53,6 +54,12 @@ public class Hero extends Mover {
             removeTouching(Charactercoin1.class);
         }
     }
+     public void Charactercoin2() {
+        if(isTouching(Charactercoin2.class)) {
+            waardeCoin = 3;
+            removeTouching(Charactercoin2.class);
+        }
+    }
 
     @Override
     public void act() {
@@ -61,6 +68,7 @@ public class Hero extends Mover {
         velocityX *= drag;
         velocityY += acc;
         Charactercoin1();
+        Charactercoin2();
        
         if (velocityY > gravity) {
             velocityY = gravity;
@@ -73,6 +81,12 @@ public class Hero extends Mover {
                 break;
             }
         }
+      
+        if (isTouching(Slime.class)) {
+                getWorld().removeObject(this);
+                
+            }
+        
         for(Actor liquidLava : getIntersectingObjects(TileExtended.class)) {
            TileExtended tile = (TileExtended) liquidLava;
            if (tile != null && tile.type == "vuur") {
@@ -148,7 +162,7 @@ public class Hero extends Mover {
         setImage("p"+waardeCoin+"_jump.png");
     }
     public void animateDuck(){
-        setImage(p1duck);
+        setImage("p"+waardeCoin+"_duck.png");
     }
         
     public void animateRight()
@@ -190,12 +204,16 @@ public class Hero extends Mover {
         else if(frame == 9)
         {
         setImage("p"+waardeCoin+"_walk09.png");
+    {
+       
         frame = 1;
         return;
         }
 
-       frame ++;
+      
         }
+        frame ++;
+    }
         
         public void animateLeft()
         {
@@ -234,11 +252,15 @@ public class Hero extends Mover {
         else if(frame == 9)
         {
         setImage("p"+waardeCoin+"_walk09mirrored.png");
+    
+        
+     
         frame = 1;
         return;
         }
         frame ++;
         }
+    
        
     
 
