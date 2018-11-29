@@ -90,6 +90,7 @@ Counter counter = new Counter();
         addObject(new Deurmidden3(), 2400, 750);
         addObject(new Deurtop3(), 2400, 690);
         addObject(new Sleutel(), 2680, 2220);
+        addObject(new Charactercoin1(), 2080, 1060);
         
         
       

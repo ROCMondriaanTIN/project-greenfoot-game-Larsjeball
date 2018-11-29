@@ -1,6 +1,4 @@
-
 import greenfoot.*;
-
 /**
  *
  * @author R. Springer
@@ -36,6 +34,10 @@ public class Hero extends Mover {
     private GreenfootImage p1duck = new GreenfootImage("p1_duck.png");
     public int frame = 1;
     private int animationCounter = 0;
+     int waardeCoin = 1;
+     int Charactercoin1 = 0;
+    
+  
 
 
     public Hero() {
@@ -45,6 +47,12 @@ public class Hero extends Mover {
         drag = 0.8;
         setImage("p1.png");
     }
+    public void Charactercoin1() {
+        if(isTouching(Charactercoin1.class)) {
+            waardeCoin = 2;
+            removeTouching(Charactercoin1.class);
+        }
+    }
 
     @Override
     public void act() {
@@ -52,6 +60,8 @@ public class Hero extends Mover {
        animationCounter ++;
         velocityX *= drag;
         velocityY += acc;
+        Charactercoin1();
+       
         if (velocityY > gravity) {
             velocityY = gravity;
         }
@@ -119,7 +129,7 @@ public class Hero extends Mover {
             animateDuck();
         }
 
-        if (Greenfoot.isKeyDown("Left"))
+       if (Greenfoot.isKeyDown("Left"))
         {
             velocityX = -6;
             if(animationCounter % 4 == 0)
@@ -132,10 +142,10 @@ public class Hero extends Mover {
             if(animationCounter % 4 == 0)
             animateRight();
         }
-        
+       
     }
     public void animateJump(){
-        setImage(p1jump);
+        setImage("p"+waardeCoin+"_jump.png");
     }
     public void animateDuck(){
         setImage(p1duck);
@@ -147,39 +157,39 @@ public class Hero extends Mover {
     
         if(frame == 1)
         {
-        setImage(p1);
+        setImage("p"+waardeCoin+"_walk01.png");
         }
         else if(frame == 2)
         {
-        setImage(p2);
+        setImage("p"+waardeCoin+"_walk02.png");
         }
        else if(frame == 3)
         {
-        setImage(p3);
+        setImage("p"+waardeCoin+"_walk03.png");
         }
         else if(frame == 4)
         {
-        setImage(p4);
+        setImage("p"+waardeCoin+"_walk04.png");
         }
         else if(frame == 5)
         {
-        setImage(p5);
+        setImage("p"+waardeCoin+"_walk05.png");
         }
         else if(frame == 6)
         {
-        setImage(p6);
+        setImage("p"+waardeCoin+"_walk06.png");
         }
        else if(frame == 7)
         {
-        setImage(p7);
+        setImage("p"+waardeCoin+"_walk07.png");
         }
         else if(frame == 8)
         {
-        setImage(p8);
+        setImage("p"+waardeCoin+"_walk08.png");
         }
         else if(frame == 9)
         {
-        setImage(p9);
+        setImage("p"+waardeCoin+"_walk09.png");
         frame = 1;
         return;
         }
@@ -191,44 +201,45 @@ public class Hero extends Mover {
         {
             if(frame == 1)
         {
-        setImage(p1mir);
+        setImage("p"+waardeCoin+"_walk01mirrored.png");
         }
         else if(frame == 2)
         {
-        setImage(p2mir);
+        setImage("p"+waardeCoin+"_walk02mirrored.png");
         }
        else if(frame == 3)
         {
-        setImage(p3mir);
+        setImage("p"+waardeCoin+"_walk03mirrored.png");
         }
         else if(frame == 4)
         {
-        setImage(p4mir);
+        setImage("p"+waardeCoin+"_walk04mirrored.png");
         }
         else if(frame == 5)
         {
-        setImage(p5mir);
+        setImage("p"+waardeCoin+"_walk05mirrored.png");
         }
         else if(frame == 6)
         {
-        setImage(p6mir);
+        setImage("p"+waardeCoin+"_walk06mirrored.png");
         }
        else if(frame == 7)
         {
-        setImage(p7mir);
+        setImage("p"+waardeCoin+"_walk07mirrored.png");
         }
         else if(frame == 8)
         {
-        setImage(p8mir);
+        setImage("p"+waardeCoin+"_walk08mirrored.png");
         }
         else if(frame == 9)
         {
-        setImage(p9mir);
+        setImage("p"+waardeCoin+"_walk09mirrored.png");
         frame = 1;
         return;
         }
         frame ++;
         }
+       
     
 
 
@@ -242,8 +253,3 @@ public class Hero extends Mover {
         return getImage().getHeight();
     }
 }
-
-
-
-
-
