@@ -10,7 +10,7 @@ public class TileFactory
      * Creates a Tile object based on the mapIcon number you give
      * @param mapIcon number @return Tile tile object
      */
-    static public Tile createTile(int mapIcon)
+    public Tile createTile(int mapIcon) {
     {
         Tile tile;
         switch (mapIcon) {
