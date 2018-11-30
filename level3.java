@@ -94,13 +94,15 @@ Counter counter = new Counter();
         addObject(new Deurmidden4(), 1380, 750);
         addObject(new Deurtop4(), 1380, 690);
         addObject(new Sleutel(), 2680, 2220);
-        addObject(new Charactercoin1(), 2080, 1090);
-        addObject(new Charactercoin2(), 1680, 1090);
+        addObject(new Charactercoin1(), 1680, 1090);
+        addObject(new Charactercoin2(), 2100, 1090);
         addObject(new Slime(), 540, 1550);
-        addObject(new Slime(), 2700, 770);
-        addObject(new Slime(), 1680, 770);
+        addObject(new Enemy2(), 2700, 730);
+        addObject(new Enemy2(), 1680, 730);
         addObject(new Slime(), 1500, 1970);
-        addObject(new Slime(), 3480, 2010);
+        addObject(new Slime(), 3480, 2030);
+        addObject(new Slime(), 3680, 2030);
+        addObject(new Slime(), 3880, 2030);
        // addObject(new Enemy(), 1170, 410);
 
         // Initialiseren van de CollisionEngine zodat de speler niet door de tile heen kan lopen.

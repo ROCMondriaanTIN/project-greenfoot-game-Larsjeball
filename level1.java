@@ -68,7 +68,7 @@ Counter counter = new Counter();
         addObject(new Sleutel(), 2300, 150);
         addObject(new Deurmidden(), 4109, 508);
         addObject(new Deurtop(), 4109, 448);
-        addObject(new Enemy2(), 2340, 360);
+        addObject(new Enemy2(), 2340, 375);
         
        // addObject(new Enemy(), 1170, 410);
 
