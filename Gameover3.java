@@ -42,5 +42,8 @@ public class Gameover3 extends World
 
         Restart2 restart2 = new Restart2();
         addObject(restart2,489,346);
+        removeObject(restart2);
+        Restart3 restart3 = new Restart3();
+        addObject(restart3,466,333);
     }
 }

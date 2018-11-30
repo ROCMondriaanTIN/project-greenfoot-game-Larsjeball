@@ -82,10 +82,7 @@ public class Hero extends Mover {
             }
         }
       
-        if (isTouching(Slime.class)) {
-                getWorld().removeObject(this);
-                
-            }
+        
         
         for(Actor liquidLava : getIntersectingObjects(TileExtended.class)) {
            TileExtended tile = (TileExtended) liquidLava;

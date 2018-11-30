@@ -30,8 +30,12 @@ public class Slime extends Mover
 
     @Override
     public void act() {
-      
-      
+        for (Actor slime : getIntersectingObjects(Hero.class)) {
+            if (slime != null){
+                if (getWorld() instanceof level3) Greenfoot.setWorld(new Gameover3());
+                return;
+            }
+        }
         int x = getX();
         int y = getY();
 
@@ -54,4 +58,5 @@ public class Slime extends Mover
         }
     }
 }
+
 

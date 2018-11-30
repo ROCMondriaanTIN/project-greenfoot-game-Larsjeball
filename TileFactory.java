@@ -370,3 +370,4 @@ public class TileFactory
         return tile;
     }
 }
+}
