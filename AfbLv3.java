@@ -1,15 +1,15 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Ster1 here.
+ * Write a description of class AfbLv3 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Ster1 extends Actor
+public class AfbLv3 extends Actor
 {
     /**
-     * Act - do whatever the Ster1 wants to do. This method is called whenever
+     * Act - do whatever the AfbLv3 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act() 

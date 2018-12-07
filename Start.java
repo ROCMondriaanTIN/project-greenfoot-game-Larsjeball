@@ -8,20 +8,19 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Start extends Actor
 {
-      public Start()
-{
-    GreenfootImage myImage = getImage();
-    int myNewHeight = (int)myImage.getHeight()/3;
-    int myNewWidth = (int)myImage.getWidth()/3;
-    myImage.scale(myNewWidth, myNewHeight);
-}
+  private boolean onThis = false;
     public void act() 
     {
-       {
-       if(Greenfoot.mouseClicked(this))
-       Greenfoot.setWorld(new level1());
-       
+        if (Greenfoot.mouseMoved(null))
+            onThis = Greenfoot.mouseMoved(this);
+        if (onThis)
+            setImage("Start2.png"); 
+        else
+            setImage("Start.png"); 
+        if (Greenfoot.mouseClicked(this)) {
+            Greenfoot.setWorld(new level1());
+        }    
     }    
 }
-}
+
 

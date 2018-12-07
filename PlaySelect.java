@@ -35,5 +35,13 @@ public class PlaySelect extends World
         addObject(karakter2,194,486);
         Karakter3 karakter3 = new Karakter3();
         addObject(karakter3,1084,486);
+        Informatie informatie = new Informatie();
+        addObject(informatie,675,276);
+        select.setLocation(790,398);
+        select.setLocation(793,362);
+        select.setLocation(810,386);
+        select.setLocation(844,356);
+        Enemy2 enemy2 = new Enemy2();
+        addObject(enemy2,691,483);
     }
 }

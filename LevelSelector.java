@@ -163,6 +163,10 @@ public class LevelSelector extends World
         afbLv2.setLocation(459,555);
         Nummer3 nummer3 = new Nummer3();
         addObject(nummer3,767,427);
+        AfbLv3 afbLv3 = new AfbLv3();
+        addObject(afbLv3,784,566);
+        Nummer4 nummer4 = new Nummer4();
+        addObject(nummer4,1084,428);
     }
 }
 
