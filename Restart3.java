@@ -8,17 +8,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Restart3 extends Mover
 {
-      public Restart3()
-{
-    GreenfootImage myImage = getImage();
-    int myNewHeight = (int)myImage.getHeight()/6;
-    int myNewWidth = (int)myImage.getWidth()/6;
-    myImage.scale(myNewWidth, myNewHeight);
-}
-    public void act() 
-    {
-       if(Greenfoot.mouseClicked(this))
-       
-           Greenfoot.setWorld(new level3());
+    private boolean onThis = false;
+    public void act() {
+   if (Greenfoot.mouseMoved(null))
+            onThis = Greenfoot.mouseMoved(this);
+        if (onThis)
+            setImage("RestartAM3.png"); 
+        else
+            setImage("Restart3.png"); 
+        if (Greenfoot.mouseClicked(this)) {
+            Greenfoot.setWorld(new level3());
     }    
+}
 }

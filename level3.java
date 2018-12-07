@@ -103,7 +103,7 @@ Counter counter = new Counter();
         addObject(new Slime(), 3480, 2030);
         addObject(new Slime(), 3680, 2030);
         addObject(new Slime(), 3880, 2030);
-        addObject(new Slime(), 3980, 2030);
+        
         addObject(new Ster(), 1850, 640);
        // addObject(new Enemy(), 1170, 410);
 
@@ -120,10 +120,14 @@ Counter counter = new Counter();
     public void act() {
         ce.update();
     }
+    
     private void prepare()
     {
         addObject(counter, 100, 40);
+        Cross cross = new Cross();
+        addObject(cross,1157,35);
     }
+
     public Counter getCounter()
     {
         return counter;

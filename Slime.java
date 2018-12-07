@@ -33,6 +33,7 @@ public class Slime extends Mover
         for (Actor slime : getIntersectingObjects(Hero.class)) {
             if (slime != null){
                 if (getWorld() instanceof level3) Greenfoot.setWorld(new Gameover3());
+                 if (getWorld() instanceof level4) Greenfoot.setWorld(new LevelSelector());
                 return;
             }
         }

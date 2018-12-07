@@ -89,6 +89,8 @@ Counter counter = new Counter();
     private void prepare()
     {
         addObject(counter, 100, 40);
+        Cross cross = new Cross();
+        addObject(cross,1161,36);
     }
 
     public Counter getCounter()

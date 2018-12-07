@@ -27,6 +27,8 @@ public class Enemy2 extends Mover {
         for (Actor enemy : getIntersectingObjects(Hero.class)) {
             if (enemy != null){
                 if (getWorld() instanceof level1) Greenfoot.setWorld(new Gameover());
+                if (getWorld() instanceof level3) Greenfoot.setWorld(new Gameover3());
+                  if (getWorld() instanceof level4) Greenfoot.setWorld(new LevelSelector());;
                 return;
             }
         }

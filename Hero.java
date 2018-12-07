@@ -129,7 +129,7 @@ public class Hero extends Mover {
     public void handleInput() 
     {
         
-        if (Greenfoot.isKeyDown("space")&& canJump == true) 
+        if (Greenfoot.isKeyDown("space")&& canJump == true)
         {
             velocityY = -16;
             animateJump();
