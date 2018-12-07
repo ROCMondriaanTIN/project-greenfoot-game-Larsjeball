@@ -103,6 +103,7 @@ Counter counter = new Counter();
         addObject(new Slime(), 3480, 2030);
         addObject(new Slime(), 3680, 2030);
         addObject(new Slime(), 3880, 2030);
+         addObject(new Slime(), 3980, 2030);
        // addObject(new Enemy(), 1170, 410);
 
         // Initialiseren van de CollisionEngine zodat de speler niet door de tile heen kan lopen.
