@@ -16,7 +16,7 @@ public class Deurtop5 extends Mover
     {
                if(getOneIntersectingObject(Hero.class)!= null && getWorld().getObjects(Sleutel.class).isEmpty())
         {
-        Greenfoot.setWorld(new startscherm());
+        Greenfoot.setWorld(new Victory());
     }
         applyVelocity();
     }    

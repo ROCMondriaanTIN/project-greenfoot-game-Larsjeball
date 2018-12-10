@@ -107,14 +107,19 @@ Counter counter = new Counter();
 
         // Alle objecten toevoegen aan de wereld: camera, main karakter en mogelijke enemies
         addObject(camera, 0, 0);
-        addObject(hero, 300, 260);
+        addObject(hero, 300, 860);
         addObject(counter, 100,40);
         addObject(new Enemy2(),3300, 1390);
         addObject(new Enemy2(),2700, 1390);
         addObject(new Enemy2(),3000, 1390);
-        addObject(new Slime(),3800, 1440);
-        addObject(new Slime(),1270, 1150);
-        addObject(new Sleutel(),3730, 2080);
+        addObject(new Slime(),3800, 1435);
+        addObject(new Slime(),4600, 1435);
+        addObject(new Slime(),1070, 1135);
+        addObject(new Slime(),770, 1135);
+        addObject(new Deurmidden5(), 5750, 1050);
+        addObject(new Deurtop5(), 5750, 980);
+        addObject(new Sleutel(),3752, 2080);
+         addObject(new Slime(),3892, 2275);
        
        // addObject(new Enemy(), 1170, 410);
 
