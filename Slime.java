@@ -34,6 +34,7 @@ public class Slime extends Mover
             if (slime != null){
                 if (getWorld() instanceof level3) Greenfoot.setWorld(new Gameover3());
                  if (getWorld() instanceof level4) Greenfoot.setWorld(new Gameover4());
+                  if (getWorld() instanceof level5) Greenfoot.setWorld(new Gameover5());
                 return;
             }
         }

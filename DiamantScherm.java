@@ -1,22 +1,22 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class InformatieScherm here.
+ * Write a description of class DiamantScherm here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class InformatieScherm extends World
+public class DiamantScherm extends World
 {
 
     /**
-     * Constructor for objects of class InformatieScherm.
+     * Constructor for objects of class DiamantScherm.
      * 
      */
-    public InformatieScherm()
+    public DiamantScherm()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(1200, 650, 1); 
+        super(1200, 500, 1); 
         prepare();
     }
 
@@ -27,6 +27,6 @@ public class InformatieScherm extends World
     private void prepare()
     {
         Cross cross = new Cross();
-        addObject(cross,1157,36);
+        addObject(cross,1163,37);
     }
 }

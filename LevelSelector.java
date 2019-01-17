@@ -169,6 +169,12 @@ public class LevelSelector extends World
         addObject(nummer4,1084,428);
         AfbLv4 afbLv4 = new AfbLv4();
         addObject(afbLv4,1067,565);
+        Special special = new Special();
+        addObject(special,1036,170);
+        Nummer5 nummer5 = new Nummer5();
+        addObject(nummer5,1037,91);
+        AfbLv5 afbLv5 = new AfbLv5();
+        addObject(afbLv5,1045,300);
     }
 }
 

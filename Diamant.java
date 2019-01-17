@@ -8,20 +8,35 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Diamant extends Mover
 {
-    /**
-     * Act - do whatever the Diamant wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+    static boolean diamantCollected = false;
     public void act() 
     {
-         for (Actor enemy : getIntersectingObjects(Hero.class)) {
-            if (enemy != null) {
-                
-                
-                break;
-            }
-        }
+          {
+       for (Actor enemy : getIntersectingObjects(Hero.class)) {
+           if (getWorld() instanceof level2){
+                diamantCollected();
+           }
+           if (enemy != null) {
+                getWorld().removeObject(this);
+                return;
+           }
+       }
+      applyVelocity();
+    }
+}
+    public void diamantCollected(){
+        diamantCollected = true;
+    }
     
-    applyVelocity();
+    public void level5(){
+        if(diamantCollected == true) {
+            Greenfoot.setWorld(new level5());
+        }
+        else{
+            Greenfoot.setWorld(new DiamantScherm());
+    }    
 }
 }
+    
+
+
